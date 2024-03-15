@@ -28,7 +28,7 @@ Viewing the source code of this project acknowledges that you have read and unde
 
 `http://127.0.0.1:5000/celery_blueprint/add/<int:a>/<int:b>`
 
-#### Loop a number of tasks (warning: this will task that sleeps for a range)
+#### Loop a number of tasks (warning: this will create a task that sleeps for a range(1, total))
 
 `http://127.0.0.1:5000/celery_blueprint/process/<int:total>`
 
