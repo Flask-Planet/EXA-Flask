@@ -1,0 +1,17 @@
+volumes:
+  instance:
+
+services:
+  app:
+    env_file:
+      - .env
+    container_name: "exa_flask"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # enters on "supervisord", "-c", "/main/supervisord.conf"
+    ports:
+      - "${FLASK_EXT_PORT}:5000"
+    volumes:
+      - instance:/main/app/instance
+    restart: always

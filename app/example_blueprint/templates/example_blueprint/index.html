@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <title>EXA-Flask (celery-gunicorn-docker)</title>
+</head>
+<body style="background: #343434; color: aliceblue">
+<h1>EXA-Flask (celery-gunicorn-docker)</h1>
+<p>Rendering route: app/example_blueprint/__init__.py/def index</p>
+<p>Template file: app/example_blueprint/templates/example_blueprint/index.html</p>
+<p>String: {{ stringv }}</p>
+<p>Int: {{ intv }}</p>
+<p>Float: {{ floatv }}</p>
+<p>Bool: {{ boolv }}</p>
+<p>List: {{ listv }} :: </p>
+{% for val in listv %}
+    <p>{{ val }}</p>
+{% endfor %}
+<p>Dict: {{ dictv }} :: </p>
+{% for key, val in dictv.items() %}
+    <p>{{ key }} = {{ val }}</p>
+{% endfor %}
+<p>Example Table: {{ example_table }}</p>
+<img src="{{ url_for('example_blueprint.static', filename='flask_planet_tpbk.png') }}" alt="Flask-Planet">
+</body>
+</html>
