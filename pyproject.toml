@@ -1,0 +1,8 @@
+[project]
+name = "EXA-Flask (celery-gunicorn-docker)"
+authors = [
+    { name = "David Carmichael" },
+]
+description = "Flask setup examples."
+requires-python = ">=3.8"
+license = { text = "Attribution (For explainers) 4.0 International" }
