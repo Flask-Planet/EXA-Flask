@@ -5,10 +5,7 @@
 **This example contains a working example of...**
 
 - Flask
-- Celery
-- Gunicorn
-- Supervisor
-- Docker
+- TailwindCSS
 
 Check branches, and select an example you're interested in.
 
@@ -40,7 +37,7 @@ Viewing the source code of this project acknowledges that you have read and unde
 
 ### Setup
 
-(This assumes you have Python installed)
+(This assumes you have Python and Node installed)
 
 #### Linux/Darwin
 
@@ -58,31 +55,22 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### .env
+#### npm
 
-You will need to create a `.env` file in the root 
-of the project. 
-
-There is an example `.env.example` 
-file to help you get started.
-
+```bash
+npm install
+```
 
 ### Run
 
 Terminal 1:
 
 ```bash
-gunicorn
+flask run --debug
 ```
 
 Terminal 2:
 
 ```bash
-celery -A make_celery worker --loglevel=info
-```
-
-### Docker
-
-```bash
-docker-compose up --build -d
+npx tailwindcss -i ./tailwindcss/index.css -o ./app/static/index.css --watch
 ```

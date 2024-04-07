@@ -4,3 +4,4 @@
 /app/instance/
 /instance/
 /.env
+/node_modules/

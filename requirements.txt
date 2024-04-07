@@ -1,6 +1,1 @@
 flask
-gunicorn
-python-dotenv
-celery
-sqlalchemy
-supervisor

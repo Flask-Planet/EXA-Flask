@@ -1,6 +1,12 @@
 from flask import Blueprint, render_template
 
-example_blueprint = Blueprint("example_blueprint", __name__, url_prefix="/example-blueprint")
+example_blueprint = Blueprint(
+    "example_blueprint",
+    __name__,
+    url_prefix="/example-blueprint",
+    template_folder="templates",
+    static_folder="static",
+)
 
 
 @example_blueprint.get("/")

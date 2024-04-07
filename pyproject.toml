@@ -1,5 +1,5 @@
 [project]
-name = "EXA-Flask (celery-gunicorn-docker)"
+name = "EXA-Flask (tailwindcss)"
 authors = [
     { name = "David Carmichael" },
 ]

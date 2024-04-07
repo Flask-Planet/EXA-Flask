@@ -1,24 +1,30 @@
 <html lang="en">
 <head>
-    <title>EXA-Flask (celery-gunicorn-docker)</title>
+    <title>EXA-Flask (tailwindcss)</title>
+    <link href="{{ url_for('static', filename='index.css') }}{{ no_cache() }}" rel="stylesheet">
 </head>
-<body style="background: #343434; color: aliceblue">
-<h1>EXA-Flask (celery-gunicorn-docker)</h1>
-<p>Rendering route: app/routes/index.py/def index_routes/def index</p>
-<p>Template file: app/templates/index.html</p>
-<p>String: {{ stringv }}</p>
-<p>Int: {{ intv }}</p>
-<p>Float: {{ floatv }}</p>
-<p>Bool: {{ boolv }}</p>
-<p>List: {{ listv }} :: </p>
-{% for val in listv %}
-    <p>{{ val }}</p>
-{% endfor %}
-<p>Dict: {{ dictv }} :: </p>
-{% for key, val in dictv.items() %}
-    <p>{{ key }} = {{ val }}</p>
-{% endfor %}
-<p>Example Table: {{ example_table }}</p>
-<img src="{{ url_for('static', filename='flask_planet_tpbk.png') }}" alt="Flask-Planet">
+<body class="bg-blue-950">
+
+<div class="mx-auto bg-gray-200 p-4 rounded-lg shadow-lg mt-4"
+     style="width: 100%; max-width: 750px;">
+    <h1>EXA-Flask (tailwindcss)</h1>
+    <p>Rendering route: app/routes/index.py/def index_routes/def index</p>
+    <p>Template file: app/templates/index.html</p>
+    <p>String: {{ stringv }}</p>
+    <p>Int: {{ intv }}</p>
+    <p>Float: {{ floatv }}</p>
+    <p>Bool: {{ boolv }}</p>
+    <p>List: {{ listv }} :: </p>
+    {% for val in listv %}
+        <p>{{ val }}</p>
+    {% endfor %}
+    <p>Dict: {{ dictv }} :: </p>
+    {% for key, val in dictv.items() %}
+        <p>{{ key }} = {{ val }}</p>
+    {% endfor %}
+    <p>Example Table: {{ example_table }}</p>
+    <img src="{{ url_for('static', filename='flask_planet_tpbk.png') }}" alt="Flask-Planet">
+</div>
+
 </body>
 </html>
