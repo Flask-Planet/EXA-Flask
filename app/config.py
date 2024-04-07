@@ -1,11 +1,5 @@
 class Config:
-    TESTING = False
-    CELERY = {
-        "broker_url": "sqla+sqlite:///app/instance/celery.sqlite",
-        "result_backend": "db+sqlite:///app/instance/celery.sqlite",
-        "task_ignore_result": True,
-        "broker_connection_retry_on_startup": True
-    }
+    pass
 
 
 class ProductionConfig(Config):
@@ -17,4 +11,4 @@ class DevelopmentConfig(Config):
 
 
 class TestingConfig(Config):
-    TESTING = True
+    pass
