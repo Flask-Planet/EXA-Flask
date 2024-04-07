@@ -19,22 +19,6 @@ See: [LICENSE](LICENSE)
 
 Viewing the source code of this project acknowledges that you have read and understood the license.
 
-### Celery Routes
-
-#### Start a task that adds two numbers
-
-`http://127.0.0.1:5000/celery_blueprint/add/<int:a>/<int:b>`
-
-#### Loop a number of tasks (warning: this will create a task that sleeps for a range(1, total))
-
-`http://127.0.0.1:5000/celery_blueprint/process/<int:total>`
-
-#### Check the progress of a task
-
-`http://127.0.0.1:5000/celery_blueprint/check_task/<_id>`
-
-`add` and `process` will return a task id that can be used to check the progress of the task.
-
 ### Setup
 
 (This assumes you have Python and Node installed)
@@ -60,6 +44,19 @@ pip install -r requirements.txt
 ```bash
 npm install
 ```
+
+### Info
+
+This example contains a Flask context_processor that
+is used to prevent caching of the CSS file that
+tailwindcss generates.
+
+The context_processor is located in `app/__init__.py`.
+
+And is used like `{{ url_for('static', filename='index.css') }}{{ no_cache() }}`
+
+`no_cache()` will append the current date, time (with secs) onto the end of the CSS f
+ile only if Flask is in debug mode.
 
 ### Run
 
