@@ -1,0 +1,4 @@
+flask
+flask-rpc
+vite-transporter
+sqlalchemy

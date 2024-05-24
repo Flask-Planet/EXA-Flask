@@ -1,7 +1,13 @@
 # EXA-Flask
 (EXA, Example)
 
-Flask setup examples.
+**This example contains a working example of...**
+
+- Flask
+- SQLAlchemy
+- SolidJS
+- Vite
+- WeeRPC
 
 Check branches, and select an example you're interested in.
 
