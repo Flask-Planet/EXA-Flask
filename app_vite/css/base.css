@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    @apply m-0 p-0 bg-gray-100;
+}
+
+form {
+    @apply p-4 bg-white shadow rounded-md;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+label {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+input {
+    @apply rounded-md border border-gray-300;
+    padding: 0.2rem;
+}
+
+button {
+    @apply rounded-md text-sm justify-center inline-flex
+    gap-1 py-1 px-4 no-underline cursor-pointer capitalize
+    shadow items-center select-none bg-blue-500 text-white
+    hover:bg-blue-600;
+    max-width: 300px;
+}
+
+h1 {
+    @apply text-2xl font-bold mb-6;
+}
+
+h2 {
+    @apply text-xl font-bold;
+}

@@ -2,3 +2,6 @@ flask
 flask-rpc
 vite-transporter
 sqlalchemy
+requests
+faker
+pyqwe

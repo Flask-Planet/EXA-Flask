@@ -1,0 +1,9 @@
+[tool.vite_transporter]
+npm_exec = "npm"
+npx_exec = "npx"
+serve_app = "app"
+vite_apps = ["app_vite"]
+
+[tool.pyqwe]
+flask = "*:flask run --debug --host 127.0.0.1 --port 6600"
+vite = "*(app_vite):npx vite --host 127.0.0.1 --port 6601"
