@@ -55,8 +55,8 @@ The context_processor is located in `app/__init__.py`.
 
 And is used like `{{ url_for('static', filename='index.css') }}{{ no_cache() }}`
 
-`no_cache()` will append the current date, time (with secs) onto the end of the CSS f
-ile only if Flask is in debug mode.
+`no_cache()` will append the current date, time (with secs) onto the end of the CSS 
+file only if Flask is in debug mode.
 
 ### Run
 
